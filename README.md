@@ -9,7 +9,7 @@ Code written in Python in Jupyter Notebook and is not to be used for other purpo
 The model trained on a local machine witout the use of GPU or similar.
 
 
-To install the Norwegian language model run python -m spacy download nb_core_news_sm after installing reqiurements.
+To install the Norwegian language model 'run python -m spacy download nb_core_news_sm' after installing reqiurements.
 
 ## Noteboks
 * *Arkivverket_notebook_create_training_data.ipynb* creates training data based on the ton.csv files from the talk-of-norway corpus.
