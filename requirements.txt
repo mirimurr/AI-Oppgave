@@ -1,0 +1,11 @@
+spacy==2.3.5
+plac
+random
+pickle
+pathlib
+spacy-lookups-data
+thinc
+pandas
+numpy
+json
+jsonlines

@@ -1,13 +1,17 @@
 # AI-Oppgave
 
-En MVP/PoC Named Entity Recogniser for politiske partier nevn i talk-of-norway.
-Et tilfeldig utvalg av 1000 setninger der et av partiene i corpuset under 'party name' er nevnt.
-Utgangspunkt i SpaCy sin modell for bokmål.
-Koden er skrevet i Python i Jupyter Notebook og kan ikke anses for å kunne brukes til annet enn en PoC/MVP.
-Modellen er trent på lokal maskin uten GPU.
 
-An MVP/PoC Named Entity Reconiser for political parties in Norway mentioned in the talk-of-norway corpus.
-A random selection of a 1000 sentences where one of the political parties is mentioned under the tag party name.
+
+An MVP/PoC Named Entity Reconizer with political parties in Norway added to the list of entities. the political parties are the ones mentioned in the talk-of-norway corpus.
+A random selection of a 1000 text where one of the political parties is mentioned under the tag party name.
 Based on Spacys model for Norwegian bokmål
-Cod written in Python in Jupyter Notebook and is not to be used for other purposes then an PoC/MVP.
+Code written in Python in Jupyter Notebook and is not to be used for other purposes then an PoC/MVP. 
 The model trained on a local machine witout the use of GPU or similar.
+
+To install the Norwegian language model run python -m spacy download nb_core_news_sm after installing reqiurements.
+
+#Noteboks
+Arkivverket_notebook_create_training_data.ipynb creates training data based on the ton.csv files from the talk-of-norway corpus.
+train_ner.ipynb trains a new model for Named Entity Recognition based on the Norwegian language model provided by Spacy. The model is saved to xxx.
+Test_custom_ner_model.ipynb loads the model and displays the result.
+
