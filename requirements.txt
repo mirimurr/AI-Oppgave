@@ -1,6 +1,5 @@
 spacy==2.3.5
 plac
-pickle
 pathlib
 spacy-lookups-data
 thinc
